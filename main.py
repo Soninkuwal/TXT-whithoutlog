@@ -23,9 +23,9 @@ import re
 import os
 
 bot = Client("bot",
-    api_id=API_ID,
-    api_hash=API_HASH,
-    bot_token=BOT_TOKEN)
+             api_id = API_ID,
+             api_hash = API_HASH,
+             bot_token = BOT_TOKEN)
 AMINS [7841292070]
 
 @bot.on_message(filters.command(["start"]) & filters.user(ADMINS))
