@@ -22,14 +22,11 @@ import sys
 import re
 import os
 
-bot = Client(
-    "bot",
+bot = Client("bot",
     api_id=API_ID,
     api_hash=API_HASH,
-    bot_token=BOT_TOKEN,
-    owner=OWNER,
-    admins=ADMINS)
-
+    bot_token=BOT_TOKEN)
+AMINS [7841292070]
 
 @bot.on_message(filters.command(["start"]) & filters.user(ADMINS))
 async def account_login(bot: Client, m: Message):
